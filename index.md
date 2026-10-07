@@ -155,6 +155,14 @@ We are in the *food and shelter* phase. The user interface stays stable while th
 - pkarr name: [5ti57asz...u8y.pkarr.net][try-pkarr]
 - Blog post: [iroh global content discovery][post]
 
+---
+
+# Backup: links
+
+- [di1u1hpx...m5y.pkarr][demo-1] ([debug][demo-1-debug])
+- [wpw3uozq...cyo.pkarr][demo-2] ([debug][demo-2-debug])
+- [iroh-share releases][iroh-share]
+
 [bep-5]: https://www.bittorrent.org/beps/bep_0005.html
 [bep-44]: https://www.bittorrent.org/beps/bep_0044.html
 [iroh-blobs]: https://docs.iroh.computer/protocols/blobs
@@ -166,3 +174,7 @@ We are in the *food and shelter* phase. The user interface stays stable while th
 [try-pkarr]: https://5ti57aszf7kaicsncb4wgigkf9bju39kofiz8dthwdujkmz85u8y.pkarr.net/
 [post]: https://www.iroh.computer/blog/iroh-global-content-discovery
 [pkarr-net]: https://pkarr.net/
+[demo-1]: http://di1u1hpx1rg3t13tqhhps8abtx6yz8xcxafzxq53zzsi4jiadm5y.pkarr.localhost:45475/
+[demo-1-debug]: http://di1u1hpx1rg3t13tqhhps8abtx6yz8xcxafzxq53zzsi4jiadm5y.pkarr.localhost:45475/?debug
+[demo-2]: http://wpw3uozquk6hi8y79je83dxy394ukc4m8e9ygy1oonhm6dff1cyo.pkarr.localhost:45475
+[demo-2-debug]: http://wpw3uozquk6hi8y79je83dxy394ukc4m8e9ygy1oonhm6dff1cyo.pkarr.localhost:45475/?debug
