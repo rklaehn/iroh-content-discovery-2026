@@ -88,6 +88,15 @@ We need: `host:port` → `EndpointId`
 
 ---
 
+# Not just content: gossip peers
+
+- Any 32-byte key works, not just a BLAKE3 content hash
+- [Gossip example][gossip-example]: topic string → gossip `TopicId` + mainline infohash
+- Every member **announces itself** and **resolves the others**
+- No ticket exchange: same topic string, same swarm
+
+---
+
 # Websites: content-addressed links
 
 ![w:900](public/animations/link-syntax.svg)
@@ -180,3 +189,4 @@ We are in the *food and shelter* phase. The user interface stays stable while th
 [demo-2]: http://wpw3uozquk6hi8y79je83dxy394ukc4m8e9ygy1oonhm6dff1cyo.pkarr.localhost:45475
 [demo-2-debug]: http://wpw3uozquk6hi8y79je83dxy394ukc4m8e9ygy1oonhm6dff1cyo.pkarr.localhost:45475/?debug
 [demo-3]: http://95rd4eydjt1ir7ai341pfrz4hr7u1nys5jpzmfeuz6kabh3941ay.pkarr.localhost:45475/co2-monitor/
+[gossip-example]: https://github.com/n0-computer/iroh-content-discovery/blob/main/iroh-mainline-endpoint-discovery/examples/gossip.rs

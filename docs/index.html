@@ -287,10 +287,20 @@ img { max-width: 100%; max-height: 530px; display: block; margin: 8px auto 0; }
 
 </section>
 <section class="slide">
+<h1>Not just content: gossip peers</h1>
+<ul>
+<li>Any 32-byte key works, not just a BLAKE3 content hash</li>
+<li><a href="https://github.com/n0-computer/iroh-content-discovery/blob/main/iroh-mainline-endpoint-discovery/examples/gossip.rs">Gossip example</a>: topic string → gossip <code>TopicId</code> + mainline infohash</li>
+<li>Every member <strong>announces itself</strong> and <strong>resolves the others</strong></li>
+<li>No ticket exchange: same topic string, same swarm</li>
+</ul>
+
+</section>
+<section class="slide">
 <h1>Websites: content-addressed links</h1>
 <p><svg class="anim" style="width:900px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 210" role="img" aria-labelledby="title desc">
-  <title id="s10-title">Anatomy of a content-addressed link</title>
-  <desc id="s10-desc">https://9z39w8pj1tqkfkmmnr46nx9zjn9ro4iq46sykj3eywk6h8u7yk4o.blake3.net contains a 52-character z-base-32 encoded BLAKE3 hash and the blake3.net namespace.</desc>
+  <title id="s11-title">Anatomy of a content-addressed link</title>
+  <desc id="s11-desc">https://9z39w8pj1tqkfkmmnr46nx9zjn9ro4iq46sykj3eywk6h8u7yk4o.blake3.net contains a 52-character z-base-32 encoded BLAKE3 hash and the blake3.net namespace.</desc>
   <rect x="10" y="10" width="880" height="190" rx="12" fill="#f3f4f6"/>
   <g font-family="Space Mono, monospace" font-size="15">
     <text x="95" y="73" fill="#555" textLength="72" lengthAdjust="spacingAndGlyphs">https://</text>
@@ -343,8 +353,8 @@ img { max-width: 100%; max-height: 530px; display: block; margin: 8px auto 0; }
 <section class="slide">
 <h1>Zooko's triangle</h1>
 <p><svg class="anim" style="width:640px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 510" role="img" aria-labelledby="title desc">
-  <title id="s14-title">Zooko’s triangle: pkarr and DNS</title>
-  <desc id="s14-desc">Three naming properties: human-readable, decentralized, and secure. DNS with DNSSEC sits between human-readable and secure. Pkarr sits on the edge between decentralized and secure: anyone can generate a name, but the name is a public key rather than a memorable word.</desc>
+  <title id="s15-title">Zooko’s triangle: pkarr and DNS</title>
+  <desc id="s15-desc">Three naming properties: human-readable, decentralized, and secure. DNS with DNSSEC sits between human-readable and secure. Pkarr sits on the edge between decentralized and secure: anyone can generate a name, but the name is a public key rather than a memorable word.</desc>
   <rect x="10" y="10" width="740" height="490" rx="12" fill="#f3f4f6"/>
   <g fill="none" stroke-linejoin="round">
     <path d="M 195 410.429 L 380 90 L 565 410.429" stroke="#9ca3af" stroke-width="2"/>
