@@ -113,6 +113,17 @@ hello from iroh-mainline-endpoint-discovery
 
 ---
 
+# Why `<z32>.blake3.net`, not just `<z32>`?
+
+- A bare key as hostname (pubky style) is not a URL anything recognizes
+  - the address bar searches for it, chat and markdown don't linkify it
+  - needs a custom DNS resolver, squats on the TLD namespace
+- `https://<z32>.blake3.net/` is a **plain https URL**: autolinks, previews, copy-paste just work
+- The suffix says **what** it is: content hash (`blake3.net`) or public key (`pkarr.net`)
+- Without the plugin, the link still lands on a domain we control
+
+---
+
 <!-- center -->
 
 ![](public/images/content-addressed-browsing.png)
@@ -158,6 +169,7 @@ We are in the *food and shelter* phase. The user interface stays stable while th
 - Gateway + plugin: [github.com/n0-computer/iroh-content-discovery][icd]
 - Static content: [y7rmokt6...hto.blake3.net][try-blake3]
 - pkarr name: [5ti57asz...u8y.pkarr.net][try-pkarr]
+- What the links are: [blake3.net][blake3-net] and [pkarr.net][pkarr-net]
 - Blog post: [iroh.computer/blog/iroh-global-content-discovery][post]
 
 [bep-5]: https://www.bittorrent.org/beps/bep_0005.html
@@ -171,3 +183,5 @@ We are in the *food and shelter* phase. The user interface stays stable while th
 [try-blake3]: https://y7rmokt6h5mryuauw83em4u1br6tqrukaw3ngtde7zp8p3bg6hto.blake3.net/
 [try-pkarr]: https://5ti57aszf7kaicsncb4wgigkf9bju39kofiz8dthwdujkmz85u8y.pkarr.net/
 [post]: https://www.iroh.computer/blog/iroh-global-content-discovery
+[blake3-net]: https://blake3.net/
+[pkarr-net]: https://pkarr.net/
