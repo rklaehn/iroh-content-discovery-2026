@@ -90,10 +90,12 @@ We need: `host:port` → `EndpointId`
 
 # Not just content: gossip peers
 
-- Any 32-byte key works, not just a BLAKE3 content hash
-- [Gossip example][gossip-example]: topic string → gossip `TopicId` + mainline infohash
-- Every member **announces itself** and **resolves the others**
-- No ticket exchange: same topic string, same swarm
+- Any 20-byte infohash works, not just content
+- The address index record is **per UDP socket**, shared by all your announces
+- Ours is a signed `EndpointId`, so every infohash resolves to iroh endpoints
+- [Gossip example][gossip-example]: topic string → gossip `TopicId` + infohash
+  - every member announces itself and resolves the others
+  - no ticket exchange: same topic string, same swarm
 
 ---
 

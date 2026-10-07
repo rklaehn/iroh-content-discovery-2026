@@ -289,10 +289,15 @@ img { max-width: 100%; max-height: 530px; display: block; margin: 8px auto 0; }
 <section class="slide">
 <h1>Not just content: gossip peers</h1>
 <ul>
-<li>Any 32-byte key works, not just a BLAKE3 content hash</li>
-<li><a href="https://github.com/n0-computer/iroh-content-discovery/blob/main/iroh-mainline-endpoint-discovery/examples/gossip.rs">Gossip example</a>: topic string → gossip <code>TopicId</code> + mainline infohash</li>
-<li>Every member <strong>announces itself</strong> and <strong>resolves the others</strong></li>
-<li>No ticket exchange: same topic string, same swarm</li>
+<li>Any 20-byte infohash works, not just content</li>
+<li>The address index record is <strong>per UDP socket</strong>, shared by all your announces</li>
+<li>Ours is a signed <code>EndpointId</code>, so every infohash resolves to iroh endpoints</li>
+<li><a href="https://github.com/n0-computer/iroh-content-discovery/blob/main/iroh-mainline-endpoint-discovery/examples/gossip.rs">Gossip example</a>: topic string → gossip <code>TopicId</code> + infohash
+<ul>
+<li>every member announces itself and resolves the others</li>
+<li>no ticket exchange: same topic string, same swarm</li>
+</ul>
+</li>
 </ul>
 
 </section>
