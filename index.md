@@ -86,30 +86,21 @@ We need: `host:port` → `EndpointId`
 
 ---
 
-# Demo
-
-```text
-> cargo run -p iroh-mainline-endpoint-discovery --example blobs
-Publishing the endpoint record and announcing the blob...
-Looking up Mainline infohash: 1221617bb90534bb2fafc4b35ea1bb08470cc81a
-Mainline returned provider address: 82.76.245.139:53799
-Address index: 82.76.245.139:53799 -> fbf0dad7c55cdc98fad984da...
-Trying this endpoint with the iroh-blobs downloader...
-Downloaded and verified 44 bytes:
-hello from iroh-mainline-endpoint-discovery
-```
-
-- SHA-1 of the BLAKE3 hash as infohash
-- Candidates are **unverified**, we check everything against BLAKE3
-
----
-
 # Websites: content-addressed links
 
 ![w:900](public/animations/link-syntax.svg)
 
 - **Browser plugin** rewrites to `<hash>.blake3.localhost:45475`
 - **Local gateway** finds providers on mainline, downloads, verifies
+
+---
+
+# Names: pkarr
+
+- Permissionless DNS records for a keypair, published on mainline
+- `<key>.pkarr.net` → plugin → gateway resolves → `<hash>.blake3.net`
+
+![w:1000](public/animations/pkarr-link-rewrite.svg)
 
 ---
 
@@ -125,15 +116,6 @@ hello from iroh-mainline-endpoint-discovery
 <!-- center -->
 
 ![](public/images/content-addressed-browsing.png)
-
----
-
-# Names: pkarr
-
-- Permissionless DNS records for a keypair, published on mainline
-- `<key>.pkarr.net` → plugin → gateway resolves → `<hash>.blake3.net`
-
-![w:1000](public/animations/pkarr-link-rewrite.svg)
 
 ---
 
