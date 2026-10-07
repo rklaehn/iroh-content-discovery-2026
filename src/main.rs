@@ -198,6 +198,11 @@ img { max-width: 100%; max-height: 530px; display: block; margin: 8px auto 0; }
 const JS: &str = r#"
 const slides = [...document.querySelectorAll('.slide')];
 const counter = document.getElementById('counter');
+// links open in a new tab so the deck stays where it is
+for (const a of document.querySelectorAll('.slide a')) {
+  a.target = '_blank';
+  a.rel = 'noopener';
+}
 let cur = Math.min(slides.length - 1, Math.max(0, parseInt(location.hash.slice(1)) || 0));
 
 function rescale() {
