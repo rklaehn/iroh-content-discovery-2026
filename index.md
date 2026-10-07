@@ -92,6 +92,7 @@ We need: `host:port` → `EndpointId`
 
 - **Browser plugin** rewrites to `<hash>.blake3.localhost:45475`
 - **Local gateway** finds providers on mainline, downloads, verifies
+- **One origin per hash** on `localhost`: content is isolated like separate websites
 
 ---
 
