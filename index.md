@@ -99,7 +99,9 @@ We need: `host:port` → `EndpointId`
 # Names: pkarr
 
 - Permissionless DNS records for a keypair, published on mainline
-- `<key>.pkarr.net` → plugin → gateway resolves → `<hash>.blake3.net`
+- **Browser plugin** rewrites `<key>.pkarr.net` to `<key>.pkarr.localhost`
+- **Local gateway** resolves the record **and** fetches the content
+- Served as `<key>.pkarr.localhost`: one origin per name
 
 ![w:1000](public/animations/pkarr-link-rewrite.svg)
 

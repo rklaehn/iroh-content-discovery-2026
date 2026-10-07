@@ -317,7 +317,9 @@ img { max-width: 100%; max-height: 530px; display: block; margin: 8px auto 0; }
 <h1>Names: pkarr</h1>
 <ul>
 <li>Permissionless DNS records for a keypair, published on mainline</li>
-<li><code>&lt;key&gt;.pkarr.net</code> → plugin → gateway resolves → <code>&lt;hash&gt;.blake3.net</code></li>
+<li><strong>Browser plugin</strong> rewrites <code>&lt;key&gt;.pkarr.net</code> to <code>&lt;key&gt;.pkarr.localhost</code></li>
+<li><strong>Local gateway</strong> resolves the record <strong>and</strong> fetches the content</li>
+<li>Served as <code>&lt;key&gt;.pkarr.localhost</code>: one origin per name</li>
 </ul>
 <p><svg class="anim" style="width:1000px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" role="img" aria-labelledby="title desc">
 <title id="s11-title">The browser plugin rewrites a pkarr link</title>
