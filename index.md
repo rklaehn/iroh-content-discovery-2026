@@ -31,6 +31,8 @@ Publish a website, a blog post or a pamphlet, and have it stay available **globa
   - a **single root hash**, no piece length, no piece hashes
   - validate any range while it streams in
 
+<img src="public/images/blake3-tree.png" alt="BLAKE3 tree" style="width:560px; margin-top:28px">
+
 ---
 
 # Mainline DHT: `announce_peer` / `get_peers`
