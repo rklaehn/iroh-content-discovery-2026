@@ -148,10 +148,9 @@ We are in the *food and shelter* phase. The user interface stays stable while th
 
 # Try it
 
-- Gateway + plugin: [github.com/n0-computer/iroh-content-discovery][icd]
+- Open [pkarr.net][pkarr-net] and follow the instructions
 - Static content: [y7rmokt6...hto.blake3.net][try-blake3]
 - pkarr name: [5ti57asz...u8y.pkarr.net][try-pkarr]
-- What the links are: [blake3.net][blake3-net] and [pkarr.net][pkarr-net]
 - Blog post: [iroh.computer/blog/iroh-global-content-discovery][post]
 
 [bep-5]: https://www.bittorrent.org/beps/bep_0005.html
@@ -161,9 +160,7 @@ We are in the *food and shelter* phase. The user interface stays stable while th
 [udp-addr-index]: https://github.com/n0-computer/iroh-content-discovery/tree/main/udp-addr-index
 [iroh-share]: https://github.com/n0-computer/iroh-share/releases
 [sendme]: https://www.iroh.computer/sendme
-[icd]: https://github.com/n0-computer/iroh-content-discovery
 [try-blake3]: https://y7rmokt6h5mryuauw83em4u1br6tqrukaw3ngtde7zp8p3bg6hto.blake3.net/
 [try-pkarr]: https://5ti57aszf7kaicsncb4wgigkf9bju39kofiz8dthwdujkmz85u8y.pkarr.net/
 [post]: https://www.iroh.computer/blog/iroh-global-content-discovery
-[blake3-net]: https://blake3.net/
 [pkarr-net]: https://pkarr.net/
