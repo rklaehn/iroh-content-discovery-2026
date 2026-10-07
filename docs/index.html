@@ -331,14 +331,9 @@ img { max-width: 100%; max-height: 530px; display: block; margin: 8px auto 0; }
 
 </section>
 <section class="slide">
-<h1>Why <code>&lt;z32&gt;.blake3.net</code>, not just <code>&lt;z32&gt;</code>?</h1>
+<h1>Why <code>&lt;z32&gt;.blake3.net</code>?</h1>
 <ul>
-<li>pubky suggests a bare <code>&lt;z32&gt;</code> key as hostname
-<ul>
-<li>that takes over the <strong>whole namespace of single-label hosts</strong></li>
-<li>browsers will never support that</li>
-</ul>
-</li>
+<li>The plugin needs a <strong>hostname</strong> to decide whether to redirect</li>
 <li><code>https://&lt;z32&gt;.blake3.net/</code> is a <strong>plain https URL</strong>: works in every browser, autolinks, copy-paste</li>
 <li>The suffix says <strong>what</strong> it is: content hash (<code>blake3.net</code>) or public key (<code>pkarr.net</code>)</li>
 <li>Without the plugin, the link still lands on a domain we control</li>

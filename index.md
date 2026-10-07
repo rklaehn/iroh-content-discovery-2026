@@ -113,11 +113,9 @@ hello from iroh-mainline-endpoint-discovery
 
 ---
 
-# Why `<z32>.blake3.net`, not just `<z32>`?
+# Why `<z32>.blake3.net`?
 
-- pubky suggests a bare `<z32>` key as hostname
-  - that takes over the **whole namespace of single-label hosts**
-  - browsers will never support that
+- The plugin needs a **hostname** to decide whether to redirect
 - `https://<z32>.blake3.net/` is a **plain https URL**: works in every browser, autolinks, copy-paste
 - The suffix says **what** it is: content hash (`blake3.net`) or public key (`pkarr.net`)
 - Without the plugin, the link still lands on a domain we control
