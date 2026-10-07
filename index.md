@@ -105,10 +105,11 @@ We need: `host:port` → `EndpointId`
 
 ---
 
-# Why `<z32>.blake3.net`?
+# Why `blake3.net` and `pkarr.net` hostnames?
 
 - The plugin needs a **hostname** to decide whether to redirect
 - `https://<z32>.blake3.net/` is a **plain https URL**: works in every browser, autolinks, copy-paste
+- Less invasive than `ipfs://` / `ipns://` protocol handlers
 - The suffix says **what** it is: content hash (`blake3.net`) or public key (`pkarr.net`)
 - Without the plugin, the link still lands on a domain we control
 
