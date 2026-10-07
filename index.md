@@ -151,7 +151,7 @@ We are in the *food and shelter* phase. The user interface stays stable while th
 - Open [pkarr.net][pkarr-net] and follow the instructions
 - Static content: [y7rmokt6...hto.blake3.net][try-blake3]
 - pkarr name: [5ti57asz...u8y.pkarr.net][try-pkarr]
-- Blog post: [iroh.computer/blog/iroh-global-content-discovery][post]
+- Blog post: [iroh global content discovery][post]
 
 [bep-5]: https://www.bittorrent.org/beps/bep_0005.html
 [bep-44]: https://www.bittorrent.org/beps/bep_0044.html
