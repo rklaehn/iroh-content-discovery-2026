@@ -39,7 +39,7 @@ Publish a website, a blog post or a pamphlet, and have it stay available **globa
 
 ---
 
-# Extreme minimalism
+# Mainline: extreme minimalism
 
 - Every query and response fits in a **single UDP packet**
 - A provider record is just `host:port` **as seen by the DHT node**
