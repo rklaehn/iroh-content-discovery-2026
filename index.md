@@ -103,8 +103,6 @@ We need: `host:port` → `EndpointId`
 - **Local gateway** resolves the record **and** fetches the content
 - Served as `<key>.pkarr.localhost`: one origin per name
 
-![w:1000](public/animations/pkarr-link-rewrite.svg)
-
 ---
 
 # Why `<z32>.blake3.net`?
