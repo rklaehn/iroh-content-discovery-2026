@@ -88,17 +88,6 @@ We need: `host:port` → `EndpointId`
 
 ---
 
-# Not just content: gossip peers
-
-- Any 20-byte infohash works, not just content
-- The address index record is **per UDP socket**, shared by all your announces
-- Ours is a signed `EndpointId`, so every infohash resolves to iroh endpoints
-- [Gossip example][gossip-example]: topic string → gossip `TopicId` + infohash
-  - every member announces itself and resolves the others
-  - no ticket exchange: same topic string, same swarm
-
----
-
 # Websites: content-addressed links
 
 ![w:900](public/animations/link-syntax.svg)
@@ -145,6 +134,17 @@ We need: `host:port` → `EndpointId`
 - *You* are the publisher: content and names need continuous announcing
 - [iroh-share][iroh-share]: like [sendme][sendme], but as a daemon
 - Mine runs on an old NAS in my attic, behind a NAT
+
+---
+
+# Not just content: gossip peers
+
+- Any 20-byte infohash works, not just content
+- The address index record is **per UDP socket**, shared by all your announces
+- Ours is a signed `EndpointId`, so every infohash resolves to iroh endpoints
+- [Gossip example][gossip-example]: topic string → gossip `TopicId` + infohash
+  - every member announces itself and resolves the others
+  - no ticket exchange: same topic string, same swarm
 
 ---
 
