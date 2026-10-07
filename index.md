@@ -173,6 +173,7 @@ We are in the *food and shelter* phase. The user interface stays stable while th
 - [di1u1hpx...m5y.pkarr][demo-1] ([debug][demo-1-debug])
 - [wpw3uozq...cyo.pkarr][demo-2] ([debug][demo-2-debug])
 - [95rd4eyd...1ay.pkarr/co2-monitor][demo-3]
+- [8um71us3...dty.pkarr (debug)][demo-4]
 - [iroh-share releases][iroh-share]
 
 [bep-5]: https://www.bittorrent.org/beps/bep_0005.html
@@ -192,3 +193,4 @@ We are in the *food and shelter* phase. The user interface stays stable while th
 [demo-2-debug]: http://wpw3uozquk6hi8y79je83dxy394ukc4m8e9ygy1oonhm6dff1cyo.pkarr.localhost:45475/?debug
 [demo-3]: http://95rd4eydjt1ir7ai341pfrz4hr7u1nys5jpzmfeuz6kabh3941ay.pkarr.localhost:45475/co2-monitor/
 [gossip-example]: https://github.com/n0-computer/iroh-content-discovery/blob/main/iroh-mainline-endpoint-discovery/examples/gossip.rs
+[demo-4]: http://8um71us3fyw6h8wbcxb5ar3rwusy1a6u49956ikzojg3gcwd1dty.pkarr.localhost:45475/?debug
